@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gaddammd_ContactListApplication.Views.AddContactPage"
+             Title="Add Contact">
+
+    <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="FillAndExpand">
+        
+        <Label Text="Add New Contact" FontSize="24" FontAttributes="Bold" TextColor="#512BD4" />
+        
+        <Label Text="Name:" FontSize="14" FontAttributes="Bold" />
+        <Entry Placeholder="Enter contact name"
+               Text="{Binding Name}" />
+        
+        <Label Text="Email:" FontSize="14" FontAttributes="Bold" />
+        <Entry Placeholder="Enter email address"
+               Text="{Binding Email}"
+               Keyboard="Email" />
+        
+        <Label Text="Phone Number:" FontSize="14" FontAttributes="Bold" />
+        <Entry Placeholder="Enter phone number"
+               Text="{Binding PhoneNumber}"
+               Keyboard="Telephone" />
+        
+        <Label Text="Description:" FontSize="14" FontAttributes="Bold" />
+        <Editor Placeholder="Enter description"
+                Text="{Binding Description}"
+                HeightRequest="100" />
+        
+        <StackLayout Spacing="10" Orientation="Horizontal">
+            <Button Text="Save Contact"
+                    Command="{Binding SaveContactCommand}"
+                    BackgroundColor="#512BD4"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Padding="15,10"
+                    HorizontalOptions="FillAndExpand" />
+            
+            <Button Text="View Contacts"
+                    Command="{Binding GoToContactsListCommand}"
+                    BackgroundColor="#999999"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Padding="15,10"
+                    HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+        
+    </VerticalStackLayout>
+
+</ContentPage>

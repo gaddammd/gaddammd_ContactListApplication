@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gaddammd_ContactListApplication.Views.ContactDetailPage"
+             Title="Contact Details">
+
+    <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="FillAndExpand">
+        
+        <Label Text="Contact Details" FontSize="24" FontAttributes="Bold" TextColor="#512BD4" />
+        
+        <Frame BorderColor="#512BD4" CornerRadius="10" Padding="15" HasShadow="True">
+            <StackLayout Spacing="12">
+                
+                <StackLayout Spacing="5">
+                    <Label Text="Name" FontSize="12" FontAttributes="Bold" TextColor="#999999" />
+                    <Label Text="{Binding SelectedContact.Name}" FontSize="16" TextColor="#333333" />
+                </StackLayout>
+                
+                <BoxView Color="#E8E8E8" HeightRequest="1" />
+                
+                <StackLayout Spacing="5">
+                    <Label Text="Email" FontSize="12" FontAttributes="Bold" TextColor="#999999" />
+                    <Label Text="{Binding SelectedContact.Email}" FontSize="16" TextColor="#333333" />
+                </StackLayout>
+                
+                <BoxView Color="#E8E8E8" HeightRequest="1" />
+                
+                <StackLayout Spacing="5">
+                    <Label Text="Phone Number" FontSize="12" FontAttributes="Bold" TextColor="#999999" />
+                    <Label Text="{Binding SelectedContact.PhoneNumber}" FontSize="16" TextColor="#333333" />
+                </StackLayout>
+                
+                <BoxView Color="#E8E8E8" HeightRequest="1" />
+                
+                <StackLayout Spacing="5">
+                    <Label Text="Description" FontSize="12" FontAttributes="Bold" TextColor="#999999" />
+                    <Label Text="{Binding SelectedContact.Description}" FontSize="16" TextColor="#333333" />
+                </StackLayout>
+                
+            </StackLayout>
+        </Frame>
+        
+        <StackLayout Spacing="10" VerticalOptions="EndAndExpand">
+            <Button Text="Back to Contacts"
+                    Command="{Binding GoBackCommand}"
+                    BackgroundColor="#512BD4"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Padding="15,10" />
+            
+            <Button Text="Add Another Contact"
+                    Command="{Binding GoToAddContactCommand}"
+                    BackgroundColor="#999999"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Padding="15,10" />
+        </StackLayout>
+        
+    </VerticalStackLayout>
+
+</ContentPage>

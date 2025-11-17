@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gaddammd_ContactListApplication.Views.ContactsPage"
+             Title="Contacts">
+
+    <VerticalStackLayout Padding="10" Spacing="10" VerticalOptions="FillAndExpand">
+        
+        <Label Text="Your Contacts" FontSize="24" FontAttributes="Bold" TextColor="#512BD4" />
+        
+        <Button Text="+ Add New Contact"
+                Command="{Binding GoToAddContactCommand}"
+                BackgroundColor="#512BD4"
+                TextColor="White"
+                CornerRadius="10"
+                Padding="15,10"
+                Margin="0,5" />
+        
+        <CollectionView ItemsSource="{Binding Contacts}"
+                        SelectionMode="Single"
+                        SelectionChangedCommand="{Binding SelectContactCommand}"
+                        SelectionChangedCommandParameter="{Binding SelectedItem, Source={RelativeSource Self}}"
+                        VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="10" Spacing="5" Margin="5">
+                        <Frame BorderColor="#512BD4" CornerRadius="10" Padding="10" HasShadow="True">
+                            <StackLayout Spacing="3">
+                                <Label Text="{Binding Name}" FontSize="16" FontAttributes="Bold" TextColor="#512BD4" />
+                                <Label Text="{Binding Email, StringFormat='Email: {0}'}" FontSize="14" TextColor="#666666" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
+    </VerticalStackLayout>
+
+</ContentPage>

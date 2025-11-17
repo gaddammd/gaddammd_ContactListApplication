@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gaddammd_ContactListApplication", "gaddammd_ContactListApplication.csproj", "{C80BF112-5D7C-3793-3528-79445B5FAEFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C80BF112-5D7C-3793-3528-79445B5FAEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C80BF112-5D7C-3793-3528-79445B5FAEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C80BF112-5D7C-3793-3528-79445B5FAEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C80BF112-5D7C-3793-3528-79445B5FAEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A09CB1C5-5E7E-46F0-AA13-0364B5A07538}
+	EndGlobalSection
+EndGlobal

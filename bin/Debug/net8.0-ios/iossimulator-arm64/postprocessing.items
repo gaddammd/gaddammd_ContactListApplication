@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="gaddammd_ContactListApplication.app/gaddammd_ContactListApplication">
+      <IsAppExtension>false</IsAppExtension>
+      <BCSymbolMapName>gaddammd_ContactListApplication.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>gaddammd_ContactListApplication.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/mithilareddygaddam/Library/CloudStorage/OneDrive-UniversityofCincinnati/UC-MSIT/Fall 2025/Tech for Mobile Applications/gaddammd_ContactListApplication/gaddammd_ContactListApplication/obj/Debug/net8.0-ios/iossimulator-arm64/mtouch-symbols.list</SymbolFile>
+      <DSymName>gaddammd_ContactListApplication.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/mithilareddygaddam/Library/CloudStorage/OneDrive-UniversityofCincinnati/UC-MSIT/Fall 2025/Tech for Mobile Applications/gaddammd_ContactListApplication/gaddammd_ContactListApplication</SourceProjectPath>
+      <IsXPCService></IsXPCService>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>
