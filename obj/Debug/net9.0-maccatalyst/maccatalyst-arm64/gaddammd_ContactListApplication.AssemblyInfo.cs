@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gaddammd_ContactListApplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+72d37497c493616959503a51169cd0772f14ad20")]
 [assembly: System.Reflection.AssemblyProductAttribute("gaddammd_ContactListApplication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gaddammd_ContactListApplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
